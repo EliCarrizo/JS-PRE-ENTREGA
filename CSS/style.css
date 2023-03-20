@@ -1,0 +1,17 @@
+body {
+    background-image: url(../img/background.jpg);
+    margin-top: auto;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    text-decoration: none;
+}
+
+.text-deco-none {
+    
+    
+}
