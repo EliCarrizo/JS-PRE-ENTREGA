@@ -11,35 +11,44 @@
 </head>
 <body>
     <header>
-        <h2> Student: Carrizo, Eliana</h2>
-        <img src="./img/logo.jpeg" alt="logo">
         <h1>👽Travel paradise 👽</h1>
-        <p> The new experience is one click away</p>
-    </header>
-    <main>
-        <h2>KAYAKING TOURS 🛶</h2>
-        <ul class="text-deco-none">
-            <li>🟢 Mocona Falls </li>
-            <li>🟢 Jaaukanigas</li>
-            <li>🟢 El Soberbio-Misiones</li>
-            <li>🟢 The 7 lakes-Bariloche</li>
-            <li>🟢 Esteros del Iberá</li>
-            <h2>SURFING TOURS</h2>
-            <ul class="text-deco-none">
+        <h2> Student: Carrizo, Eliana</h2>
+            <img class="image-small" src="./Assets/Assets/img/logo.jpeg" alt="logo">
+            <h2> The new experience is one click away</h2>
+            <h2>KAYAKING TOURS 🛶</h2>
+        <main>
+            <ul class="ul-none">
+                <li><a href="#MoconoaFalls"></a>🟢 Mocona Falls </li>
+                <li><a href="#Jaaukanigas"></a>🟢 Jaaukanigas</li>
+                <li><a href="# El Soberbio-Misiones"></a>🟢 El Soberbio-Misiones</li>
+                <li><a href="#The 7 lakes-Bariloche"></a>🟢 The 7 lakes-Bariloche</li>
+                <li><a href="#Esteros del Iberá"></a>🟢 Esteros del Iberá</li>
+            </ul>
+                <h2>SURFING TOURS</h2>
+            <ul class="ul-none">
                 <li>🟡 Mar del plata</li>
                 <li>🟡 NAZARET-Portugal</li>
                 <li>🟡 Mavericks, California</li>
                 <li>🟡 Waimea-Hawaii</li>
                 <li>🟡 Gold coast-Australia</li>
             </ul>
-        </ul>
+        </main>
+    </header>
+    <main>
+        <h2>Execute the functions in the JS console:</h2>
+        <div>login()</div>
+        <div>go()</div>
+        <div>iniciarConsulta()</div>
+        <div>preguntarPrecios()</div>
+        <div>calcularPrecioFinal()</div>
+        <div>calcularIva(importe)</div>
     </main>
     <section>
-        <h2>Ejecuta las funciones en la consola de JS:</h2>
-        <div>login()</div>
-        <div>calcularIva(importe)</div>
-        <div>calcularPrecioFinal()</div>
-        <div> iniciarConsulta()</div>
+        <form name=form action="TRAVEL PARADISE">
+            <p>USER:<input type=text name=login></p>
+            <p>PASSWORD: <input type=password name=password>
+            <input onclick=go() type=button value=Acceder>
+        </form>
     </section>
     <footer>
     <a href="https://www.coderhouse.com.pe">Coderhouse, read more!</a>
