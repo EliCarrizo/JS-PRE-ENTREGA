@@ -1,10 +1,11 @@
+/*reset*/
 *{
     margin: 0% auto;
     border: 0%;
     box-sizing: border-box;
 
 }
-
+/*the background will be changed*/
 body {
     background-image: url(../Assets/Assets/img/background.jpg);
     margin-top: auto;

@@ -2,7 +2,6 @@
 let continuar = true
 let importe = 0
 const IVA = 1.21 //Value added tax/ TAX
-let price = 0
 
 /* Logins*/
 function login() {
@@ -89,7 +88,6 @@ function calcularPrecioFinal() {
 function calcularIva(importe) {
     if (parseFloat (importe)) {
         let resultado = importe * IVA
-        console.log("The amount + IVA it is 💸 ", resultado)
+        console.log("eL importe + IVA it is 💸 ", resultado)
     }
 }
-
