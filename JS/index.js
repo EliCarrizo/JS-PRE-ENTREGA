@@ -86,7 +86,8 @@ function calcularPrecioFinal() {
 /*TAX*/
 
 function calcularIva(importe) {
-    if (parseFloat (importe)) {
+    let resultado = prompt("Insert your price")
+    if (parseFloat(importe)) {
         let resultado = importe * IVA
         console.log("eL importe + IVA it is 💸 ", resultado)
     }
