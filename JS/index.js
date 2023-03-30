@@ -70,25 +70,31 @@ function iniciarConsulta() {
 function  preguntarPrecios() {
     while(continuar) {
         iniciarConsulta()
-        continuar = confirm("¿Deseas seguir consultando otro viaje?")
+        continuar = confirm("Do you want to continue consulting another trip?")
     }
-    alert("Gracias, vuelvas prontos! ☺")
+    alert("Thanks, come back soon! ☺")
 }
 
 /*price final*/
 
 function calcularPrecioFinal() {
-    let precioDelProducto =prompt("Ingresa el valor del producto")
+    let precioDelProducto =prompt("Enter the value of the product")
     console.log("The amount is 💸",precioDelProducto )
 }
 
 
 /*TAX*/
 
-function calcularIva(importe) {
+/*function calcularIva(importe) {
     let resultado = prompt("Insert your price")
     if (parseFloat(importe)) {
         let resultado = importe * IVA
         console.log("eL importe + IVA it is 💸 ", resultado)
     }
+}*/
+function calcularIva(importe) {
+    let resultado = prompt("Insert your price")
+    let importe= parseFloat(( resultado * 1.21));
+    return (resultado);
+
 }
