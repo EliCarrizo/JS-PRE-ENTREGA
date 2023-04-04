@@ -2,7 +2,7 @@
 let continuar = true
 let importe = 0
 const IVA = 1.21 //Value added tax/ TAX
-let preguntarPrecios = 1
+
 
 /* Logins*/
 function login() {
@@ -86,16 +86,24 @@ function calcularPrecioFinal() {
 
 /*TAX*/
 
-/*function calcularIva(importe) {
+function calcularIva(importe) {
     let resultado = prompt("Insert your price")
     if (parseFloat(importe)) {
         let resultado = importe * IVA
         console.log("eL importe + IVA it is 💸 ", resultado)
     }
-}*/
-function calcularIva(importe) {
+}
+/*function calcularIva(importe) {
     let resultado = prompt("Insert your price")
     let importe= parseFloat(( resultado * 1.21));
     return (resultado);
 
+}*/
+
+function Person (literal) {
+    this.name = literal.name;
+    this.age = literal.age;
+    this.street = literal.street;
 }
+
+const personal = new Person ({ name: "Carl", age: 32, street: "choose it"});
