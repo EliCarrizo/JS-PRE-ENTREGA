@@ -2,6 +2,7 @@
 let continuar = true
 let importe = 0
 const IVA = 1.21 //Value added tax/ TAX
+let preguntarPrecios = 1
 
 /* Logins*/
 function login() {
