@@ -7,7 +7,7 @@
 }
 /*the background will be changed*/
 body {
-    background-image: url(../Assets/Assets/img/background.jpg);
+    background-image: url(../Assets/img/background.jpg);
     margin-top: auto;
     margin-left: 0%;
     margin-right: 0%;
@@ -35,4 +35,14 @@ body {
 section{
     text-align: left;
     font-size: 24px;
+}
+.card{
+    display: flex;
+    flex: auto;
+    align-items: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 250px);
+    grid-template-rows: repeat(5, 450px);
 }

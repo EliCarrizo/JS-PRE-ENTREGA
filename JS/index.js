@@ -41,19 +41,19 @@ function iniciarConsulta() {
         switch(resultado) {
             case "1":
                 alert(" 💲 Mocona Falls cost $12.000")
-                importe = 12000
+                importe = 100000
                 break
             case "2":
                 alert(" 💲 Jaaukanigas cost $45.000")
-                importe = 45000
+                importe = 55000
                 break
             case "c":
                 alert(" 💲 El soberbio-Misiones cost $80.000")
-                importe = 80000
+                importe = 95000
                 break
             case "4":
                 alert(" 💲 The 7 lakes-Bariloche cost $155.000")
-                importe = 155000
+                importe = 355000
                 break
             case "5":
                 alert(" 💲 Esteros del Iberá cost $90.000")
