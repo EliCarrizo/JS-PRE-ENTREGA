@@ -7,7 +7,7 @@
 }
 /*the background will be changed*/
 body {
-    background-image: url(../Assets/img/background.jpg);
+    background-color:palegreen;
     margin-top: auto;
     margin-left: 0%;
     margin-right: 0%;
@@ -45,4 +45,7 @@ section{
     display: grid;
     grid-template-columns: repeat(5, 250px);
     grid-template-rows: repeat(5, 450px);
+}
+.header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
