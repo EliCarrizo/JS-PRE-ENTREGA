@@ -1,5 +1,4 @@
-const shoppingcar= [{ image: '🌄', code:1, type: 'Mocona Falls', price: 100000},
-                    { image: '⛺', code:2, type: 'Jaaukanigas', price: 55000}]
+const shoppingcar= [{ image: '🌄', code:1, type: 'Mocona Falls', price: 100000}]
 
 const trips = [{ image: '🌄', code:1, type: 'Mocona Falls', price: 100000},
                { image: '⛺', code:2, type: 'Jaaukanigas', price: 55000},
@@ -14,3 +13,24 @@ const trips = [{ image: '🌄', code:1, type: 'Mocona Falls', price: 100000},
 
 
 const messageInitial = "Select ur trip:"
+
+function searchTrip(code){
+    let resultado = trips.find((trip)=>trip.code === parseInt(code))
+    return resultado
+}
+
+function endBuy() {
+    if(shoppingcar.length === 0) {
+        console.warn("Empty 🛒")
+        return
+    }
+
+   const shop = new buy(shoppingcar);
+   alert("💰The cost of the shopping car is: ARS " + shop.getSubtotal())
+   let answer = confirm("You want to confirm your payment?")
+        if (answer === true) {
+            alert('🛸 We confirm your payment: $ '+ shop.getSubtotal() + "\n Thank you for your purchase🤗")
+            shoppingcar.length=0
+        }
+
+}
