@@ -6,7 +6,7 @@
     box-sizing: border-box;
 
 }
-/*the background will be changed*/
+/*the background changed*/
 body {
     background-color:black;
     color: pink;
@@ -19,6 +19,7 @@ body {
     line-height: 1.6;
     font-family: 'Creepster', cursive;
 }
+/*NAV*/
 .navbar{
     padding: 0%;
     color:white;
@@ -35,9 +36,26 @@ body {
     align-items: center;
 }
 
-.image-small{
-    width: 20%;
-    height: 10%;
+.header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    padding: 0 5rem;
+    font-weight: 500;
+    word-spacing: 10px;
+    color: grey;
+}
+
+.title{
+    color: white;
+}
+
+.title-two{
+    color: greenyellow;
+    font-size: 20px;
+}
+
+.title-me{
+    color:pink;
 }
 
 section{
@@ -45,6 +63,20 @@ section{
     font-size: 24px;
     font-family: 'Creepster', cursive;
 }
+
+.div-section{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 0%;
+    margin: 0 auto;
+    color:pink;
+    background-color:black;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+
+}
+
 .container{
     display: grid;
     grid-template-columns: repeat(5, 250px);
@@ -91,7 +123,12 @@ section{
     color: black;
 }
 
-.header{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.image-small{
+    width: 20%;
+    height: 10%;
+}
+.image-me{
+    width: 14%;
+    height: auto;
 }
 
