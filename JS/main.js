@@ -1,4 +1,4 @@
-const shoppingcar= [{ image: '🌄', code:1, type: 'Mocona Falls', price: 100000}]
+const shoppingcar= []
 
 const trips = [{ image: '🌄', code:1, type: 'Mocona Falls', price: 100000},
                { image: '⛺', code:2, type: 'Jaaukanigas', price: 55000},
@@ -34,3 +34,40 @@ function endBuy() {
         }
 
 }
+
+function seeShoppingcar() {
+    console.table(shoppingcar)
+}
+
+function shop () {
+    //initial message + we search and validate//
+    let code = prompt(messageInitial)
+        if (!parseInt(code)) {
+            alert("❌ You entered the code wrong")
+            let answer = confirm("Do you want to try again? 👀")
+                if (answer === true) {
+                    shop()
+                }
+                return
+
+        }
+    let chosenTrip = searchTrip(code)
+        if(chosenTrip === undefined) {
+            alert("❌ You entered the code wrong")
+            let answer = confirm("Do you want to try again? 👀")
+                if (answer === true) {
+                    shop()
+                }
+            return
+        }
+        alert(chosenTrip.image + ' ' + chosenTrip.type + '- Your trip has been added to the cart 🛒😉')
+        shoppingcar.push(chosenTrip)
+
+        let answer = confirm("Do you want to buy another trip? 🙊")
+        if( answer === true) {
+            shop()
+        } else {
+            endBuy()
+        }
+}
+
