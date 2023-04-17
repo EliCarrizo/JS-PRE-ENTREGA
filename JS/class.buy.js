@@ -9,7 +9,3 @@ class buy {
     }
 
 }
-
-
-/*let acc= trip.price
-acc= +=otherTrip.price*/

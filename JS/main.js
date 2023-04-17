@@ -40,7 +40,6 @@ function seeShoppingcar() {
 }
 
 function shop () {
-    //initial message + we search and validate//
     let code = prompt(messageInitial)
         if (!parseInt(code)) {
             alert("❌ You entered the code wrong")
