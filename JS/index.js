@@ -26,19 +26,19 @@ function go() {
 
 /*Options*/
 
-const mensajeInicial = "Insert the code from your choose: \n" +
+const messageInitial = "Insert the code from your choose: \n" +
                         "1) Mocona Falls \n" +
                         "2) Jaaukanigas \n" +
                         "c) El soberbio-Misiones \n" +
                         "4) The 7 lakes- Bariloche \n" +
                         "5) Esteros del iberá \n"
 
-function iniciarConsulta() {
-    let resultado = prompt(mensajeInicial)
-        if (resultado !== "1" && resultado !== "2" && resultado !== "3" && resultado !== "4" && resultado !== "5") {
+function initialConsult() {
+    let result = prompt(messageInitial)
+        if (result !== "1" && result !== "2" && result !== "3" && result !== "4" && result !== "5") {
             alert("💥 Choose one option!.")
     }    else {
-        switch(resultado) {
+        switch(result) {
             case "1":
                 alert(" 💲 Mocona Falls cost $12.000")
                 importe = 100000
@@ -68,9 +68,9 @@ function iniciarConsulta() {
 }
 
 /*Ask about price*/
-function  preguntarPrecios() {
+function  askPrice() {
     while(continuar) {
-        iniciarConsulta()
+        initialConsult()
         continuar = confirm("Do you want to continue consulting another trip?")
     }
     alert("Thanks, come back soon! ☺")
@@ -78,9 +78,9 @@ function  preguntarPrecios() {
 
 /*price final*/
 
-function calcularPrecioFinal() {
-    let precioDelProducto =prompt("Enter the value of the product")
-    console.log("The amount is 💸",precioDelProducto )
+function calculateFinalPrice() {
+    let  PriceOfTheProduct =prompt("Enter the value of the product")
+    console.log("The amount is 💸",riceOfTheProduct )
 }
 
 

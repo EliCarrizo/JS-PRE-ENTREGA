@@ -12,7 +12,7 @@ const trips = [{ image: '🌄', code:1, type: 'Mocona Falls', price: 100000},
                { image: '🦘', code:10, type: 'Gold coast-Australia', price: 2328000}]
 
 
-const messageInitial = "Select ur trip:"
+const mensajeInicial = "Select ur trip:"
 
 function searchTrip(code){
     let resultado = trips.find((trip)=>trip.code === parseInt(code))
@@ -40,7 +40,7 @@ function seeShoppingcar() {
 }
 
 function shop () {
-    let code = prompt(messageInitial)
+    let code = prompt(mensajeInicial)
         if (!parseInt(code)) {
             alert("❌ You entered the code wrong")
             let answer = confirm("Do you want to try again? 👀")
