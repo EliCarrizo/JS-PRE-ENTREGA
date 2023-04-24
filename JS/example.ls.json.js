@@ -42,6 +42,7 @@ function retrieveFormData() {
             inputProfession.value = dataForm.profession
 
 }
+
 retrieveFormData()
 
 function removeDataFromLS() {
