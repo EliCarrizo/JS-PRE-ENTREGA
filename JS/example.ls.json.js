@@ -33,7 +33,7 @@ Objeto global JSON = JavaScript Object Notation
         .parse()
         .stringify()
 */
-
+/*
 function retrieveFormData() {
     const dataForm = JSON.parse(localStorage.getItem("dataForm"))
             inputName.value = dataForm.name
@@ -50,3 +50,4 @@ function removeDataFromLS() {
 }
 
 buttonSend.addEventListener("click", saveFormInLS)
+*/
