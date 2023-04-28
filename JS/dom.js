@@ -1,5 +1,5 @@
-const imgShoppingCar= document.querySelector("img#ShoppingCar")
-const container = document.querySelector("div#container")
+const imageShoppingCar= document.querySelector("image#ShoppingCar")
+const container = document.querySelector("div.container")
 const inputSearch = document.querySelector("input#inputSearch")
 const shoppingCar= []
 
@@ -27,6 +27,10 @@ return `<div class="card">
         </div>`
 }
 
+inputSearch.addEventListener("Search", (e=> {
+    console.log(e.target.value)
+}))
+
 function loadTrips(array){
     //{ image: '🌄', code:1, type: 'Mocona Falls', price: 100000}//
     array.forEach(trip => {
@@ -34,5 +38,9 @@ function loadTrips(array){
     });
 }
 loadTrips(trips)
+
+
+
+
 
 
