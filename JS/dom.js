@@ -37,6 +37,7 @@ function loadTrips(array){
         container.innerHTML += returnCardHTML(trip)
     });
 }
+
 loadTrips(trips)
 
 
