@@ -6,7 +6,7 @@
     sessionStorage
 */
 
-const inputName = document.querySelector("#inputName")
+/*const inputName = document.querySelector("#inputName")
 const inputAge  = document.querySelector("#inputAge")
 const inputEmail  = document.querySelector("#inputEmail")
 const inputProfession  = document.querySelector("#inputProfession")

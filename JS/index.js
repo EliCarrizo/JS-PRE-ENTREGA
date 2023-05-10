@@ -93,12 +93,6 @@ function calcularIva(importe) {
         console.log("eL importe + IVA it is 💸 ", resultado)
     }
 }
-/*function calcularIva(importe) {
-    let resultado = prompt("Insert your price")
-    let importe= parseFloat(( resultado * 1.21));
-    return (resultado);
-
-}*/
 
 function Person (literal) {
     this.name = literal.name;

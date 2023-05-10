@@ -1,10 +1,10 @@
 const imageShoppingCar= document.querySelector("image#ShoppingCar")
 const container = document.querySelector("div.container")
 const inputSearch = document.querySelector("input#inputSearch")
-const shoppingCar= []
+
 
 function filterTrips(worth) {
-    const result = trips.filter(trip => trip.type.toLowerCase().includes(worth.toLowerCase()))
+    let result = trips.filter(trip => trip.type.toLowerCase().includes(worth.toLowerCase()))
     /*Ternary operator instead of if-else*/
     result.length > 0 ? console.table(result) : console.warn("Oops no matches! ❌👀")
 }
@@ -26,10 +26,11 @@ return `<div class="card">
             </div>
         </div>`
 }
-
-inputSearch.addEventListener("Search", (e=> {
+  
+/*inputSearch.addEventListener("search", (e=> {
     console.log(e.target.value)
 }))
+
 
 function loadTrips(array){
     //{ image: '🌄', code:1, type: 'Mocona Falls', price: 100000}//
@@ -38,7 +39,7 @@ function loadTrips(array){
     });
 }
 
-loadTrips(trips)
+loadTrips(trips)*/
 
 
 

@@ -1,46 +1,46 @@
-const shoppingcar= []
+const shoppingCart= []
 
-const trips = [{ image: '../Assets/img/Mocona Falls.JPG', code:1, type: 'Mocona Falls', price: 100000},
-               { image: '../Assets/img/jaaukanigas.jpg', code:2, type: 'Jaaukanigas', price: 55000},
-               { image: '../Assets/img/El soberbio .jpg', code:3, type: 'El soberbio-Misiones', price: 95000},
-               { image: '../Assets/img/7 lakes.jpg', code:4, type: 'The 7 Lakes-Bariloche', price: 355000},
-               { image: '../Assets/img/Esteros del ibera.jpg', code:5, type: 'Esteros del Iberá', price: 90000},
-               { image: '../Assets/img/surf mdq.jpg', code:6, type: 'Mar del plata', price: 85000},
-               { image: '../Assets/img/nazaret portugal.jpg', code:7, type: 'Nazaret-Portugal', price: 1250000},
-               { image: '../Assets/img/mavericks.jpg', code:8, type: 'Mavericks-California', price: 2118000},
-               { image: '../Assets/img/waimea hawaii.jpg', code:9, type: 'Waimea-Hawaii', price: 2500000},
-               { image: '../Assets/img/gold coast australia.jpg', code:10, type: 'Gold coast-Australia', price: 2328000}]
+const trips = [{ code:1, image: '../Assets/img/Mocona Falls.JPG', type: 'Mocona Falls', price: 100000},
+               { code:2, image: '../Assets/img/jaaukanigas.jpg', type: 'Jaaukanigas', price: 55000},
+               { code:3, image: '../Assets/img/El soberbio .jpg', type: 'El soberbio-Misiones', price: 95000},
+               { code:4, image: '../Assets/img/7 lakes.jpg', type: 'The 7 Lakes-Bariloche', price: 355000},
+               { code:5, image: '../Assets/img/Esteros del ibera.jpg', type: 'Esteros del Iberá', price: 90000},
+               { code:6, image: '../Assets/img/surf mdq.jpg', type: 'Mar del plata', price: 85000},
+               { code:7, image: '../Assets/img/nazaret portugal.jpg', type: 'Nazaret-Portugal', price: 1250000},
+               { code:8, image: '../Assets/img/mavericks.jpg', type: 'Mavericks-California', price: 2118000},
+               { code:9, image: '../Assets/img/waimea hawaii.jpg', type: 'Waimea-Hawaii', price: 2500000},
+               { code:10, image: '../Assets/img/gold coast australia.jpg', type: 'Gold coast-Australia', price: 2328000}]
 
 
-const mensajeInicial = "Select ur trip:"
+const messInitial = "Select ur trip:"
 
 function searchTrip(code){
-    let resultado = trips.find((trip)=>trip.code === parseInt(code))
-    return resultado
+    let result = trips.find((trip)=>trip.code === parseInt(code))
+    return result
 }
 
 function endBuy() {
-    if(shoppingcar.length === 0) {
+    if(shoppingCar.length === 0) {
         console.warn("Empty 🛒")
         return
     }
 
-   const shop = new buy(shoppingcar);
-   alert("💰The cost of the shopping car is: ARS " + shop.getSubtotal())
+   const shop = new buy(shoppingCart);
+   alert("💰The cost of the shopping cart is: ARS " + shop.getSubtotal())
    let answer = confirm("You want to confirm your payment?")
         if (answer === true) {
             alert('🛸 We confirm your payment: $ '+ shop.getSubtotal() + "\n Thank you for your purchase🤗")
-            shoppingcar.length=0
+            shoppingCart.length=0
         }
 
 }
 
-function seeShoppingcar() {
-    console.table(shoppingcar)
+function seeShoppingCart() {
+    console.table(shoppingCart)
 }
 
 function shop () {
-    let code = prompt(mensajeInicial)
+    let code = prompt(messageInitial)
         if (!parseInt(code)) {
             alert("❌ You entered the code wrong")
             let answer = confirm("Do you want to try again? 👀")
@@ -60,7 +60,7 @@ function shop () {
             return
         }
         alert(chosenTrip.image + ' ' + chosenTrip.type + '- Your trip has been added to the cart 🛒😉')
-        shoppingcar.push(chosenTrip)
+        shoppingCart.push(chosenTrip)
 
         let answer = confirm("Do you want to buy another trip? 🙊")
         if( answer === true) {
