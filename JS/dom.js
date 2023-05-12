@@ -39,14 +39,23 @@ inputSearch.addEventListener("search", (e)=> {
 function activateClickButtons () {
     const buttons =document.querySelectorAll("button.button-outline.button-add")
     for (const button of buttons) {
-        console.log (button.id)
+        
         button.addEventListener("click", ()=> {
             let result = trips.find(trip => trip.id === parseInt(button.id))
                 shoppingCar.push(result)
+                saveShoppinCar()
         })
         }
 }
 
+function saveShoppinCar() {
+    localStorage.setItem("shoppingCarTrips", JSON.stringify(shoppingCar))
+}
+
+function recoverShoppingCar() {
+    const shoppingCarTemporal = JSON.parse(localStorage.getItem("shoppingCarTrips")) || []
+    shoppingCar.push(...shoppingCarTemporal)
+}
 
 loadTrips(trips)
 
