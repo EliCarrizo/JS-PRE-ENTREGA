@@ -11,7 +11,6 @@ function filterTrips(worth) {
 
 function returnCardHTML(travel) {
 
-
 return `<div class="card">
             <div><img class="card-image-top" src="${travel.image}" alt="Mocona"></div>
             <div class="card-name">${travel.name}</div>
@@ -21,9 +20,7 @@ return `<div class="card">
             <div class="card-button">
                 <button class="button button-outline button-add=" id="${travel.id}" title="Add to cart"><img src="../Assets/img/img-cart.jpg" alt="cart"></button>
             </div>
-        </div>
-        
-        `
+        </div>`
 }
 
 function loadTrips(array) {
@@ -32,14 +29,18 @@ function loadTrips(array) {
     array.forEach(travel => {
         container.innerHTML += returnCardHTML(travel)
     })
+    activateClickButtons()
 }
 
 inputSearch.addEventListener("search", (e)=> {
-    console.log(e.target.value)
+    filterTrips(e.target.value)
 })
 
+function activateClickButtons () {
+    const buttons =document.querySelectorAll("button.button-outline.button-add")
+}
 
-/*Llamamos a la fucnion*/
+
 loadTrips(trips)
 
 
