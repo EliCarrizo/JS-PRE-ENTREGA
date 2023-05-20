@@ -4,26 +4,6 @@ let importe = 0
 const IVA = 1.21 //Value added tax/ TAX
 
 
-/* Logins*/
-function login() {
-    let user = prompt("Insert your  User:")
-    if (user.trim().length >6) {
-        Userloggedin = user.trim()
-        alert("🏳 Welcome to Travel paradise")
-    } else {
-        alert("🚨Password contains an error🚨")
-    }
-}
-
-function go() {
-    if (document.form.password.value=='PASSWORD' && document.form.login.value=='USER'){
-            document.form.submit();
-        }
-        else{
-             alert(" ❌Please login, correct username and password❌");
-        }
-}
-
 /*Options*/
 
 const messageInitial = "Insert the code from your choose: \n" +
