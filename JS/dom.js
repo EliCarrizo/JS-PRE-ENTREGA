@@ -18,7 +18,7 @@ return `<div class="card">
             <div class="card-body"><p class="card-text"></p>
             </div>
             <div class="card-button">
-                <button class="button button-outline button-add=" id="${travel.id}" title="Add to cart"><img src="../Assets/icon/img-cart.svg" alt="cart"></button>
+                <button class="button button-outline button-add=" id="${travel.id}" title="Add to cart">Add to cart</button>
             </div>
         </div>`
 }

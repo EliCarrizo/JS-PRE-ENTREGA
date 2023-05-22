@@ -145,3 +145,11 @@ section{
     height: auto;
 }
 
+.card-button{
+    width: 10%;
+    height: 10%;
+    display: flex;
+    
+
+}
+
